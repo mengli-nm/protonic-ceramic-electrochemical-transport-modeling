@@ -66,6 +66,6 @@ for k=1:3
 end
 ylabel('p_{H2O} (atm)');xlabel('x/L');title('4411 | Gas-pressure profiles');
 yyaxis left; set(gca,'YScale','log'); ylim([1e-30,1e10]);
-yyaxis right; set(gca,'YScale','linear');
+yyaxis right; set(gca,'YScale','linear'); ylim([0,4]);
 saveas(gcf,'example_gas_pressures.png');close(gcf)
 end
