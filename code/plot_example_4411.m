@@ -15,6 +15,7 @@ for k=1:3
 end
 xlabel('x/L'); ylabel('C_e, C_h (mol/m^3)'); title('4411 | Electronic carriers');
 legend('e 50%','h 50%','e 70%','h 70%','e 90%','h 90%'); grid on
+set(gca,'YScale','log'); % Ensure logarithmic scale with hold on.
 saveas(gcf,'example_electronic_carriers.png'); close(gcf)
 % Figure B: protons and vacancies
 figure('Visible','off'); hold on
@@ -64,5 +65,7 @@ for k=1:3
     plot(X,data(k).pH2O,'Color',[1 0 0],'LineStyle',styles{k},'LineWidth',1.5);
 end
 ylabel('p_{H2O} (atm)');xlabel('x/L');title('4411 | Gas-pressure profiles');
+yyaxis left; set(gca,'YScale','log'); ylim([1e-30,1e10]);
+yyaxis right; set(gca,'YScale','linear');
 saveas(gcf,'example_gas_pressures.png');close(gcf)
 end
