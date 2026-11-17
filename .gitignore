@@ -1,0 +1,12 @@
+# Outputs written by the example forward solver
+/code/example_results_*.mat
+/code/transport_i*_steady.mat
+/code/example_*.png
+
+# Ensemble plotting outputs
+/generated/
+
+# Local or operating-system files
+.DS_Store
+__MACOSX/
+*.asv
