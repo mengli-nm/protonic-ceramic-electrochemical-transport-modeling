@@ -1,6 +1,6 @@
 # Protonic Ceramic Electrochemical Transport Modeling
 
-This repository provides computational modeling tools for protonic ceramic materials. The current MATLAB implementation accompanies *Predicting Faradaic efficiency under high steam by reconstructing defect chemistry in protonic ceramic electrolysis cells* (Zhang et al., *Joule*).
+This repository provides computational modeling tools for protonic ceramic materials. The current MATLAB implementation accompanies *Predicting Faradaic efficiency under high steam by reconstructing defect chemistry in protonic ceramic electrolysis cells*.
 
 ## Overview
 
